@@ -39,13 +39,13 @@ Escreva um valor: <br>
 $valor = $_POST['valor'];
 
 if($valor % 10 == 0){
-echo "O valor é divisível por 10!";
+echo "O valor Ã© divisÃ­vel por 10!";
 }else if($valor % 5 == 0){
-echo "O valor é divisível por 5!";
+echo "O valor Ã© divisÃ­vel por 5!";
 }else if($valor % 2 == 0){
-echo "O valor é divisível por 2!";
+echo "O valor Ã© divisÃ­vel por 2!";
 }else{
-echo "O valor não é divisível por 10, 5 ou 2!";
+echo "O valor nÃ£o Ã© divisÃ­vel por 10, 5 ou 2!";
 }
 ?>
 
@@ -73,7 +73,7 @@ $sexo = $_POST['sexo'];
 if (($sexo == Feminino) && ($valor < 25)){
 echo "Aceita!";
 }else {
-echo "Não aceita!";
+echo "NÃ£o aceita!";
 }
 ?> 
 
@@ -81,11 +81,11 @@ echo "Não aceita!";
 
 <form name='form' method='post' action=' '>
 Digite 3 valores: <br>
-1º valor: <br>
+1Âº valor: <br>
 <input type='number' name='valor1' /><br>
-2º valor: <br>
+2Âº valor: <br>
 <input type='number' name='valor2' /><br>
-3º valor: <br>
+3Âº valor: <br>
 <input type='number' name='valor3' /><br>
 <input type="submit" value="enviar" />
 </form>
@@ -104,12 +104,12 @@ echo "$valor1 <br> ";
 5)
 
 <form name='form' method='post' action=' '>
-Escreva três valores:  <br>
-1º valor:  <br>
+Escreva trÃªs valores:  <br>
+1Âº valor:  <br>
 <input type='number' name='valor1' /><br>
-2º valor: <br>
+2Âº valor: <br>
 <input type='number' name='valor2' /><br>
-3º valor: <br>
+3Âº valor: <br>
 <input type='number' name='valor3' /><br>
 <input type="submit" value="enviar" />
 </form>
@@ -120,11 +120,11 @@ $valor2 = $_POST['valor2'];
 $valor3 = $_POST['valor3'];
 
 if($valor1 == $valor2 && $valor2 == $valor3){
-echo "O triângulo equilátero!";
+echo "O triÃ¢ngulo equilÃ¡tero!";
 }else if(($valor1 == $valor2 && $valor2 <> $valor3) or ($valor1 == $valor3) && ($valor3 <> $valor2)){
-echo "O triângulo é isósceles!";
+echo "O triÃ¢ngulo Ã© isÃ³sceles!";
 }else{
-echo "O triângulo é escaleno!";
+echo "O triÃ¢ngulo Ã© escaleno!";
 }
 ?>
 
@@ -134,7 +134,7 @@ echo "O triângulo é escaleno!";
 <form method='post' name='exercicios'  action=''>
 <center>
 <font size="3" color='green' />
-Escreva o número que deseja saber o mês:<br>
+Escreva o nÃºmero que deseja saber o mÃªs:<br>
 <input type='text' name='numero' /><br>
 <input type='submit' value='enviar' />
 </font>
@@ -148,7 +148,7 @@ if ($numero == 1){
 }else if($numero == 2){
 	echo "Fevereiro";
 }else if($numero == 3){
-	echo "Março";
+	echo "MarÃ§o";
 }else if($numero == 4){
 	echo "Abril";
 }else if($numero == 5){
@@ -168,7 +168,7 @@ if ($numero == 1){
 }else if($numero == 12){
 	echo "Dezembro";
 }else{
-	echo "Não existe mês com este número";
+	echo "NÃ£o existe mÃªs com este nÃºmero";
 }
 
 ?>
@@ -181,7 +181,7 @@ if ($numero == 1){
 Qual o nome do livro? <br>
 <input type='text' name='livro' /><br>
 
-Você é aluno ou Professor <br>
+VocÃª Ã© aluno ou Professor <br>
 <input type='text' name='nome' /><br>
 
 <input type='submit' value='enviar' />
@@ -189,6 +189,8 @@ Você é aluno ou Professor <br>
 <center>
 </form>
 
+// Incompleto
 
-8) Não sei fazer ainda.
+
+8) NÃ£o sei fazer ainda.
 9) Idem.
