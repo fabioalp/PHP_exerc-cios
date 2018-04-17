@@ -186,22 +186,29 @@ if ($numero == 1){
 
 7)
 
-<form method='post' name='exercicios'  action=''>
-<center>
-<font size="3" color='green' />
-Qual o nome do livro? <br>
-<input type='text' name='livro' /><br>
-
-Você é aluno ou Professor <br>
-<input type='text' name='nome' /><br>
-
-<input type='submit' value='enviar' />
-</font>
-<center>
-</form>
-
-// Incompleto
-
+<form action="#" method="POST">
+		<fieldset>
+			<label>Nome do Livro:</label>
+			<input type='text' name='livro' />
+			<label>Usuário:</label>
+			<select name="usuario">
+			<option value="Professor">Professor</option>
+			<option value="Aluno">Aluno</option>
+			</select>			
+			<input type="submit" value="Enviar" />
+        </fieldset>
+		</form>
+		<?php
+		if (count($_POST)>0){
+			$total_dias = 10;
+			$usuario = $_POST["usuario"];
+			$livro = $_POST["livro"];
+			if ($usuario == "Aluno"){
+				$total_dias = 3;
+			}
+			echo "O livro $livro deve ser entregue em $total_dias dias";
+		}
+?>
 
 8) Não sei fazer ainda.
 9) Idem.
