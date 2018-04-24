@@ -1,0 +1,17 @@
+<form action="#" method="post">
+		<fieldset>
+			<label>Escreva uma palavra:</label>
+            <input type="text" name="palavra" value="" />
+			<input type="submit" value="Enviar" />
+        </fieldset>
+</form>
+
+<?php
+	if(isset($_POST['palavra'])){ 
+	$palavra = $_POST['palavra'];
+	echo "$palavra";
+	echo "$palavra $palavra";
+	echo "$palavra $palavra $palavra";
+	echo "$palavra $palavra $palavra $palavra.";
+}
+?>
